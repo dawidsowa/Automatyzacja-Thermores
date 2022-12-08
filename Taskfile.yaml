@@ -1,0 +1,16 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+  termodynamika:
+    cmds:
+      - python gen.py table Termodynamika "Materiały do laboratorium" > Termodynamika.html
+      - python gen.py link "https://thermores.pwr.edu.pl/fcp/xGBUKOQtTKlQhbx08SlkTUgFFUWRuHQwFDBoIVURNFDgPW1ZpCFghUHcKVigEQR1BXQEsKTwdAQsKJBVYCRlYdxdFDy4Z/157/public/termo_lab/protokol.pdf" "Protokół pomiarowy" >> Termodynamika.html
