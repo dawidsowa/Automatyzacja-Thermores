@@ -13,9 +13,9 @@ Wybrzeże Wyspiańskiego 27\
 
 ### Kierownik Katedry
 
-Sławomir Pietrowicz\
+[Sławomir Pietrowicz](/pracownicy/slawomir-pietrowicz)\
 tel. 71/ 320 36 17\
-budynek D-2, pok. 11B\
+budynek D-2, pok. 11C\
 e-mail: [slawomir.pietrowicz@pwr.edu.pl](mailto:slawomir.pietrowicz@pwr.edu.pl)
 
 ### Administrator strony

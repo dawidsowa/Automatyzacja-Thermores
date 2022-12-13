@@ -27,7 +27,7 @@ $(window).bind("load", function () {
     style: new ol.style.Style({
       image: new ol.style.Icon({
         anchor: [0.5, 1],
-        src: "https://github.com/moovspace/map-marker-openlayers/raw/master/img/marker.png",
+        src: "https://cdn.jsdelivr.net/gh/dawidsowa/Automatyzacja-Thermores/imgs/marker.png",
       }),
     }),
   });
