@@ -1,4 +1,17 @@
-:::::: columns
+```{=html}
+<script type="text/javascript">
+  // <![CDATA[
+  var head = document.head;
+  var link = document.createElement("link");
+  link.type = "text/css";
+  link.rel = "stylesheet";
+  link.href = "https://cdn.jsdelivr.net/gh/dawidsowa/Automatyzacja-Thermores/style.css";
+  head.appendChild(link);
+  // ]]>
+</script>
+```
+
+:::::: cols
 ::: col
 
 Politechnika Wrocławska\
