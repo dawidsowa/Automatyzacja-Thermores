@@ -1,0 +1,15 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo '<script src="https://thermores.pwr.edu.pl/themes/_system/js/jquery.min.js"></script>' > "{{.CLI_ARGS}}.html"
+      - cat "{{.CLI_ARGS}}.md" | sed "s/\$CDN/../g" | pandoc >> "{{.CLI_ARGS}}.html"
+      - xdg-open "{{.CLI_ARGS}}.html"
+      # - cat "{{.CLI_ARGS}}.html" | xclip -selection clipboard
+    silent: true

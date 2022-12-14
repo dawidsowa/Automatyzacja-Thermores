@@ -1,7 +1,8 @@
-.cols {
+@media screen and (min-width: 764px) {
+  .cols {
     display: flex;
-}
-
-.col {
+  }
+  .col {
     flex: 50%;
+  }
 }

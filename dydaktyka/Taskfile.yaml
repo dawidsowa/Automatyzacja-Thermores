@@ -1,0 +1,18 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  teoria-maszyn-cieplnych:
+    cmds:
+      - codebraid pandoc --no-cache --overwrite teoria-maszyn-cieplnych.md -o teoria-maszyn-cieplnych.html
+      - sed 's/style="width:99%;"/style="margin-top:0px;"/g' -i teoria-maszyn-cieplnych.html
+      - sed 's/class="dataframe"/style="margin-bottom:0px;"/g' -i teoria-maszyn-cieplnych.html
+    silent: true
+
+  podstawy-termodynamiki:
+    cmds:
+      - codebraid pandoc --no-cache --overwrite podstawy-termodynamiki.md -o podstawy-termodynamiki.html
+      - sed 's/style="width:99%;"/style="margin-top:0px;"/g' -i podstawy-termodynamiki.html
+      - sed 's/class="dataframe"/style="margin-bottom:0px;"/g' -i podstawy-termodynamiki.html
+    silent: true

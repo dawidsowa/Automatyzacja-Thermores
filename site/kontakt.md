@@ -1,5 +1,5 @@
 ```{=html}
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/dawidsowa/Automatyzacja-Thermores/scripts/add_stylesheet.js"></script>
+<script type="text/javascript" src="$CDN/scripts/add_stylesheet.js"></script>
 ```
 
 :::::: cols
@@ -29,7 +29,7 @@ e-mail: [dawid.sowa@pwr.edu.pl](mailto:dawid.sowa@pwr.edu.pl)
 ```{=html}
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ol/dist/ol.js"></script>
 <div id="map" class="map" style="height: 20em; width: 100%;"></div>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/dawidsowa/Automatyzacja-Thermores/scripts/map.js"></script>
+<script type="text/javascript" src="$CDN/scripts/map.js"></script>
 ```
 
 :::
