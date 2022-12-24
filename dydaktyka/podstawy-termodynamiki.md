@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="https://thermores.pwr.edu.pl/files/cache/projects/157/pl/css/style.css?1670941512">
-
 ### Materiały do laboratorium
 
 ```{.python .cb-run}

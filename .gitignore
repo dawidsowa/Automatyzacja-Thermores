@@ -1,3 +1,4 @@
 .~lock.*.xlsx#
 *.html
 **/__pycache__
+**.new.side

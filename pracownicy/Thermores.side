@@ -1,0 +1,316 @@
+{
+  "id": "6c8edb98-b3f7-4c57-a1c2-04cdeeb87b6c",
+  "version": "2.0",
+  "name": "T",
+  "url": "https://thermores.pwr.edu.pl",
+  "tests": [{
+    "id": "179e7755-8874-4c5d-93c3-f01fae62e1ec",
+    "name": "Dodaj",
+    "commands": [{
+      "id": "4cc80d89-f8eb-4b10-9806-2dceecb9548d",
+      "comment": "",
+      "command": "open",
+      "target": "/panel/description/index/page_id/8/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf0c6254-02db-4e78-9ef1-0d2051284505",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "930x788",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b784888b-235b-4926-b8da-cd1298a2310a",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "starttitle"
+    }, {
+      "id": "4bdb93ca-094c-4b71-8587-d68f4eadbd07",
+      "comment": "",
+      "command": "if",
+      "target": "${starttitle} == \"Katedra Termodynamiki i Odnawialnych Źródeł Energii - Panel / Logowanie\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d3022e6-6753-4bf1-8279-d6891142d30f",
+      "comment": "",
+      "command": "click",
+      "target": "id=other-accounts",
+      "targets": [
+        ["id=other-accounts", "id"],
+        ["css=#other-accounts", "css:finder"],
+        ["xpath=//span[@id='other-accounts']", "xpath:attributes"],
+        ["xpath=//body[@id='login-screen']/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Pozostali użytkownicy ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca1f06b4-4eb8-425a-82ec-add6b830343f",
+      "comment": "",
+      "command": "type",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${username}"
+    }, {
+      "id": "23327b50-707d-4f80-9d66-abfe3b7e4761",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "abaa38f3-e063-4558-a084-599adc349841",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit",
+      "targets": [
+        ["css=.submit", "css:finder"],
+        ["xpath=//input[@value='Zaloguj']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e47d80a-5b4f-4d56-817a-df865a233846",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79a135ed-4bb4-43d4-a066-89bdd5ae592b",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "//tr[td/a/text() = \"${title}\"]",
+      "targets": [],
+      "value": "elementCount"
+    }, {
+      "id": "519a2814-27b0-48a4-a551-11ccabf2acd4",
+      "comment": "",
+      "command": "if",
+      "target": "${elementCount} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9fe9030-86c7-423b-9c65-94cfd0a0e532",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//tr[td/a/text() = \"${title}\"]/td[9]/div/a[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87cccdb4-ada5-4737-8d1e-c96d2fe4f802",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0fded6e-8ebd-4802-928a-f7c5882e74f5",
+      "comment": "",
+      "command": "open",
+      "target": "/panel/description/add/page_id/8/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "085ada50-be1a-41d7-8be9-51bf5c0e093a",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11174855-2493-4e01-8e1e-f18a8209404a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Publikowanie",
+      "targets": [
+        ["linkText=Publikowanie", "linkText"],
+        ["css=.tabs > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Publikowanie')]", "xpath:link"],
+        ["xpath=//form[@id='DescriptionAdd']/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[2]", "xpath:href"],
+        ["xpath=//form/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Publikowanie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72d40ab0-e7c2-4a1e-a6e5-9483f4490c6f",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "//input[@id = \"approved\"]",
+      "targets": [],
+      "value": "elementCount"
+    }, {
+      "id": "3229f4b3-03f2-4415-88c7-8076d665b36f",
+      "comment": "",
+      "command": "if",
+      "target": "${elementCount} == 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e93494a2-9625-4257-a6ef-bd8fd0425f0b",
+      "comment": "",
+      "command": "click",
+      "target": "id=draft",
+      "targets": [
+        ["id=draft", "id"],
+        ["name=draft", "name"],
+        ["css=#draft", "css:finder"],
+        ["xpath=//input[@id='draft']", "xpath:attributes"],
+        ["xpath=//form[@id='DescriptionAdd']/div[2]/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b0c0074-17fa-47ad-8c8d-7f451e046175",
+      "comment": "",
+      "command": "click",
+      "target": "id=approved",
+      "targets": [
+        ["id=approved", "id"],
+        ["name=approved", "name"],
+        ["css=#approved", "css:finder"],
+        ["xpath=//input[@id='approved']", "xpath:attributes"],
+        ["xpath=//form[@id='DescriptionAdd']/div[2]/div[2]/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f01d7ef-ef70-4b5a-8503-d499e4a870c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=published",
+      "targets": [
+        ["id=approved", "id"],
+        ["name=approved", "name"],
+        ["css=#approved", "css:finder"],
+        ["xpath=//input[@id='approved']", "xpath:attributes"],
+        ["xpath=//form[@id='DescriptionAdd']/div[2]/div[2]/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68bbcdf5-d73d-42bb-8e07-7e112dd89624",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a67a7b4e-1034-4a8c-8a49-27855921e6b7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Treść",
+      "targets": [
+        ["linkText=Treść", "linkText"],
+        ["css=.tabs > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Treść')]", "xpath:link"],
+        ["xpath=//form[@id='DescriptionAdd']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//form/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Treść')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bca7507e-5bbc-4d1d-8515-5b2eb29b7ed5",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//form[@id='DescriptionAdd']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab55cc97-f424-40aa-8202-13216d32dfe9",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//form[@id='DescriptionAdd']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${title}"
+    }, {
+      "id": "f3133f71-365c-4535-b5b2-eaad539e59cc",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "472969a9-1981-47e2-af80-505604b06b50",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'${content}')]", "xpath:innerText"]
+      ],
+      "value": "${content}"
+    }, {
+      "id": "76d932bc-adef-4b55-bdb0-5f22c371b366",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "35752a8a-c09d-410a-802f-910602ab9580",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pwr-btn-submit",
+      "targets": [
+        ["css=.pwr-btn-submit", "css:finder"],
+        ["xpath=//input[@value='Zapisz']", "xpath:attributes"],
+        ["xpath=//form[@id='DescriptionAdd']/div[2]/div[5]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "32a3181b-56eb-4efa-8110-8fd75633c1e0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["179e7755-8874-4c5d-93c3-f01fae62e1ec"]
+  }],
+  "urls": ["https://thermores.pwr.edu.pl/"],
+  "plugins": []
+}
