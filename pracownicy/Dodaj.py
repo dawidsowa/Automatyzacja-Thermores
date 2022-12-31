@@ -1,3 +1,4 @@
+import netrc
 from subprocess import run
 from json import dump, load, dumps, loads
 from pathlib import Path
@@ -63,6 +64,7 @@ i = 0
 
 
 def append_prac(nazwa, zaw, base, dic):
+    auth = netrc.netrc().authenticators("thermores.pwr.edu.pl")
     global i
     test = base
     test["id"] = str(uuid.uuid1())
@@ -71,6 +73,8 @@ def append_prac(nazwa, zaw, base, dic):
         dumps(test)
         .replace("${title}", dumps(nazwa)[1:-1])
         .replace("${content}", dumps(zaw)[1:-1])
+        .replace("${password}", dumps(auth[2])[1:-1])
+        .replace("${username}", dumps(auth[0])[1:-1])
     )
     dic["tests"].append(test)
     i += 1

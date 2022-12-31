@@ -1,0 +1,17 @@
+[tool.poetry]
+authors = ["dawidsowa <dawid_sowa@posteo.net>"]
+description = ""
+name = "automatyzacja-thermores"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+pandas = "^1.5.2"
+python = "^3.11"
+airium = "^0.2.5"
+openpyxl = "^3.0.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
