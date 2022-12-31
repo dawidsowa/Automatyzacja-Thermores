@@ -32,7 +32,9 @@ def gen(xlsx):
         a = Airium()
         if c["Zdjęcie"]:
             with a.figure(klass="profile-picture", style="float: right;"):
-                a.img(src=c["Zdjęcie"])
+                a.img(
+                    src="https://thermores.pwr.edu.pl/files/upload/157/" + c["Zdjęcie"]
+                )
 
         with a.dl(id=c["E-mail"].split("@")[0], klass="pracownik"):
             for x in [
@@ -44,7 +46,7 @@ def gen(xlsx):
             ]:
                 if c[x]:
                     a.dt(_t=x)
-                    a.dd(_t=c[x])
+                    a.dd(_t=c[x].replace("\n", "<br/>\n"))
             a.dt(_t="Telefon")
             with a.dd():
                 a.a(href="tel:" + c["Telefon"], _t=c["Telefon"])
