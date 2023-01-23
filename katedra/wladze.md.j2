@@ -1,0 +1,25 @@
+{% macro pracownik(key) -%}
+{% if key.photo %}
+![Zdjęcie: {{ key.name }}]({{ key.photo }}){style="float:right;max-height: 10em;" class="profile-picture"}
+{% endif %}
+
+**{{ key.name }}**
+
+Telefon
+: [{{ key.tel }}](tel: {{ key.tel }})
+
+E-mail
+: [{{ key.email }}](mailto:{{ key.email }})
+
+{%- endmacro %}
+### Kierownik Katedry
+
+{{ pracownik(slawomir_pietrowicz) }}
+
+### Zastępca Kierownika Katedry
+
+{{ pracownik(piotr_kolasinski) }}
+
+### Zastępca Kierownika Katedry
+
+{{ pracownik(sabina_rosiek) }}

@@ -1,0 +1,25 @@
+{% macro laboratorium(nazwa, typ, budynek, kierownik) -%}
+#### Laboratorium {{nazwa}}{style="margin-bottom: 0"}
+##### Laboratorium {{typ}}{style="margin-top: 0; border-bottom: solid"}
+
+Budynek
+: {{budynek}}
+
+Kierownik
+: {{ kierownik.name }}
+{%- endmacro %}
+Laboratoria, nad którymi opiekę sprawują pracownicy Katedry:
+
+
+{{ laboratorium("Dydaktyczne Termodynamiki", "dydaktyczne", "D-2", jacek_lamperski)}}
+
+{{ laboratorium("Energetyki Odnawialnej", "naukowo-dydaktyczne", "Geocentrum, L-1", magdalena_nems)}}
+
+{{ laboratorium("Procesów Termodynamicznych i Badań Własności Cieplnych Substancji", "naukowo-dydaktyczne", "D-2", piotr_kolasinski)}}
+
+{{ laboratorium("Wymiany Ciepła i Modelowania Numerycznego", "naukowo-dydaktyczne", "D-2", slawomir_pietrowicz)}}
+
+------
+
+![](/files/upload/157/public/katedra/media1.mp4){style="display: block; width: 80%; margin-left: auto;
+ margin-right: auto;"}

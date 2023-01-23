@@ -1,0 +1,17 @@
+version: "3"
+
+vars:
+  DEFAULT: default
+  DATA: ../pracownicy.json
+  MARKDOWN: markdown-implicit_figures
+
+includes:
+  pandoc: ~/.local/share/pandoc/Taskfile.yaml
+
+tasks:
+  default:
+    cmds:
+      - task: pandoc:jinja2+html
+        vars: { NAME: wladze }
+      - task: pandoc:jinja2+html
+        vars: { NAME: laboratoria }
