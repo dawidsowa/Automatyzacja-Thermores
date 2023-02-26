@@ -38,3 +38,5 @@ tasks:
       - task: build
         vars:
           name: termodynamika
+  jinja:
+    - task: pandoc:jinja
