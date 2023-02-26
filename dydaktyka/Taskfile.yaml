@@ -39,4 +39,4 @@ tasks:
         vars:
           name: termodynamika
   jinja:
-    - task: pandoc:jinja
+    - task: pandoc:jinja2
