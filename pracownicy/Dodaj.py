@@ -13,9 +13,11 @@ from html import escape
 # linkText=dr inż. Cezary Czajkowski
 
 
-def gen(xlsx):
+def gen():
     pracownicy = {}
-    df = pd.read_excel(xlsx)
+    df = pd.read_csv(
+        "https://docs.google.com/spreadsheets/d/1zz1s2fZ-mcynESq3NeJ0z23Tl_sshgKjNL3phbsX7UE/export?format=csv&gid=0"
+    )
     df["Content"].fillna("", inplace=True)
     df = df.replace({np.nan: None})
 
@@ -32,7 +34,9 @@ def gen(xlsx):
 
         a = Airium()
         if c["Zdjęcie"]:
-            with a.figure(klass="profile-picture", style="float: right;"):
+            with a.figure(
+                klass="profile-picture", style="float: right; max-width: 25%"
+            ):
                 a.img(
                     src="https://thermores.pwr.edu.pl/files/upload/157/" + c["Zdjęcie"]
                 )
@@ -82,7 +86,7 @@ def append_prac(nazwa, zaw, base, dic):
 
 def add_to_side(filename, pracownicy):
     p = Path(filename)
-    dic = load(p.open())
+    dic = load(p.open(encoding="utf-8"))
 
     base = dic["tests"][0]
     del dic["tests"][0]
@@ -93,9 +97,8 @@ def add_to_side(filename, pracownicy):
 
     np = p.with_suffix(".new.side")
 
-    dump(dic, np.open("w"))
+    np.write_text(dumps(dic, sort_keys=True, indent=4), newline="\n")
 
 
 if __name__ == "__main__":
-    pracownicy = gen(argv[1])
-    add_to_side("Thermores.side", pracownicy)
+    add_to_side("Thermores.side", gen())
