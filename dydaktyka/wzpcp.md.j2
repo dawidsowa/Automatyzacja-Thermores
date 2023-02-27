@@ -1,8 +1,19 @@
-{% set base = "/files/upload/157/public/dydaktyka" %}
-{% macro cw(nr,title) -%}| {{nr}} | {{title}} | [Ćw. {{nr}}](/cw{{nr}}.zip) | [![]({{base}}/sptfp/img{{nr}}.gif){width=400px}]({{base}}/sptfp/img{{nr}}.gif) |{%- endmacro %}
+{% set base = "/files/upload/157/public/dydaktyka" -%}
+{%extends "szablon_pl.md.j2" %}
+{% block id%}97{% endblock %}
+{%- set
+files = {
+    'Zalecenia edytorskie raportu': base + "/cfd/zalecenia_edytorskie.doc",
+    'Raport - instrukcja':  base + "/cfd/raport_instrukcja.pdf",
+    'Zasady oceny raportów': base + '/wzpcp/zasadyocenyraportow.pdf',
+    'Szablon raportu': base + '/wzpcp/szablon_raportu_wzpcp.doc',
+    'Harmonogram zajęć': base + '/wzpcp/harmonogram_wzpcp.pdf' ,
+    'Wskazówki EASE dla autorów i tłumaczy artykułów naukowych publikowanych w języku angielskim': 'https://www.ease.org.uk/wp-content/uploads/2018/11/doi.10.20316.ESE_.2018.44.e1.pl_.pdf'
+}
+-%}
 
-
-### Ćwiczenia
+{% block instructions%}
+{% macro cw(nr,title) -%}| {{nr}} | {{title}} | [Ćw. {{nr}}](/cw{{nr}}.zip) | [![]({{base}}/sptfp/img{{nr}}.gif)]({{base}}/sptfp/img{{nr}}.gif) |{%- endmacro %}
 
 | Nr | Temat | Instrukcja | |
 |-|----|-|----|
@@ -13,20 +24,4 @@
 {{cw(5, "Modelowanie przepływów zawierających cząstki stałe")}}
 {{cw(6, "Modelowanie przepływu przez stopień maszyny wirnikowej")}}
 {{cw(7, "Modelowanie opływu płata")}}
-
-### Inne materiały
-
-{%- set
-files = {
-    'Zasady zaliczenia kursu': base + "/cfd/zajeciaorganizacyjne.pdf",
-    'Zalecenia edytorskie raportu': base + "/cfd/zalecenia_edytorskie.doc",
-    'Raport - instrukcja':  base + "/cfd/raport_instrukcja.pdf",
-    'Zasady oceny raportów': base + '/wzpcp/zasadyocenyraportow.pdf',
-    'Szablon raportu': base + '/wzpcp/szablon_raportu_wzpcp.doc',
-    'Harmonogram zajęć': base + '/wzpcp/harmonogram_wzpcp.pdf' ,
-    'Wskazówki EASE dla autorów i tłumaczy artykułów naukowych publikowanych w języku angielskim': 'https://www.ease.org.uk/wp-content/uploads/2018/11/doi.10.20316.ESE_.2018.44.e1.pl_.pdf'
-}
--%}
-{% for name, url in files.items() %}
-- #### [{{name}}]({{url}})
-{% endfor %}
+{%endblock%}

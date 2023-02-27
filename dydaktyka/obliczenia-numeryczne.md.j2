@@ -1,9 +1,6 @@
 {% set base = "/files/upload/157/public/dydaktyka" %}
-{% macro plik(name) -%}[{{name}}]({{base}}/obliczenia-numeryczne/{{name}}){%- endmacro -%}
-
-
-### Ćwiczenia
-
+{%extends "szablon_pl.md.j2" %}
+{% block id%}102{% endblock %}
 {% set
 classes, files = {
     1: 'Wprowadzenie',
@@ -20,7 +17,6 @@ classes, files = {
     12: 'Przepływ dwufazowy'
 },
 {
-    'Zasady zaliczenia kursu': base + "/cfd/zajeciaorganizacyjne.pdf",
     'Zalecenia edytorskie raportu': base + "/cfd/zalecenia_edytorskie.doc",
     'Raport - instrukcja':  base + "/cfd/raport_instrukcja.pdf",
     'Zasady oceny raportów': base + '/wzpcp/zasadyocenyraportow.pdf',
@@ -31,17 +27,18 @@ classes, files = {
 }
 %}
 
+{% block instructions%}
+{% macro plik(name) -%}[{{name}}]({{base}}/obliczenia-numeryczne/{{name}}){%- endmacro -%}
 | Nr | Temat | Plik |
 |-|----|-|
 {%- for nr, name in classes.items() %}
 | {{nr}} | {{name}} | {{plik("lab" ~ nr ~ ".zip")}} |
 {%- endfor %}
+{%endblock%}
 
-### Inne materiały
-
-{% for name, url in files.items() %}
-- #### [{{name}}]({{url}})
-{%- endfor %}
+{% block after %}
 
 ![Wyniki obliczeń numerycznych procesów cieplno-przepływowych w pulsacyjnej rurce ciepła\
 autor: Adrian Kwiatkowski](/files/upload/_users/przemyslaw.blasiak@pwr.edu.pl/pb/gifs/alphamphp.mp4){width=100% autoplay=""}
+
+{% endblock %}

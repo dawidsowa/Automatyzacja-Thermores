@@ -1,0 +1,17 @@
+{% set base = "/files/upload/157/public/dydaktyka" -%}
+
+<!--Link do edycji: https://thermores.pwr.edu.pl/panel/application/page/edit/id/{% block id%}{% endblock %}/#tab-4-->
+
+{% block before %}{% endblock %}
+
+### {{instructions_title}}
+
+{% block instructions%}{% endblock %}
+
+### {{other_title}}
+
+{% for name, url in files.items() %}
+- #### [{{name}}]({{url}})
+{% endfor %}
+
+{% block after %}{% endblock %}
