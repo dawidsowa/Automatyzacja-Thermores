@@ -1,5 +1,5 @@
 {% set base = "/files/upload/157/public/dydaktyka/pakiety-obliczeniowe" %}
-{% macro plik(path) -%}
+{% macro plik(name) -%}[{{name}}]({{base}}/{{name}}){%endmacro%}
 
 
 ### Materiały do zajęć
