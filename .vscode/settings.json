@@ -4,10 +4,11 @@
     "commands": [
       {
         "color": "#af565c",
-        "command": "jinja2 ${file} -o ${dir}\\{fileBasenameNoExtension}",
+        "command": "jinja2 ${file} -o ${dir}\\${fileBasenameNoExtension}",
         "name": "Jinja2",
         "singleInstance": true
       }
     ]
-  }
+  },
+  "gitdoc.enabled": false
 }
