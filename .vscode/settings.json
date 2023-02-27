@@ -4,8 +4,8 @@
     "commands": [
       {
         "color": "#af565c",
-        "command": "chmod +x ${file}",
-        "name": "+x",
+        "command": "jinja2 ${file} ${fileBasenameNoExtension}",
+        "name": "Jinja2",
         "singleInstance": true
       }
     ]
