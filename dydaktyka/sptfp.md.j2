@@ -1,10 +1,10 @@
 {% set base = "/files/upload/157/public/dydaktyka" %}
-{% macro cw(nr,title) -%}| {{nr}} | {{title}} | [Ex. {{nr}}]({{{base}}/sptfp/cw{{nr}}.zip) | [![]({{base}}/sptfp/img{{nr}}.gif){width=400px}]({{base}}/sptfp/img{{nr}}.gif) |{%- endmacro %}
+{% macro cw(nr,title) -%}| {{nr}} | {{title}} | [Ex. {{nr}}]({{{base}}/sptfp/Exno{{nr}}.zip) | [![]({{base}}/sptfp/img{{nr}}.gif){width=400px}]({{base}}/sptfp/img{{nr}}.gif) |{%- endmacro %}
 
 ### Course materials
 
 | Nr  | Topic | Instruction |
-| --- | ------------------------------------------------------ | -------------------------------- | ------------------------------------------- |
+| --- | --- | -------------------------------- | ------------------------------------------- |
 {{cw(1, "Nieustalona wymiana ciepła")}}
 {{cw(2, "Promieniowanie cieplne")}}
 {{cw(3, "Modelowanie przepływów wielofazowych")}}
