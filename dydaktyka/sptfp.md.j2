@@ -1,5 +1,14 @@
-# Course materials
+{% set base = "/files/upload/157/public/dydaktyka" %}
+{% macro cw(nr,title) -%}| {{nr}} | {{title}} | [Ćw. {{nr}}](/cw{{nr}}.zip) | [![]({{base}}/sptfp/img{{nr}}.gif){width=400px}]({{base}}/sptfp/img{{nr}}.gif) |{%- endmacro %}
 
-| Nr  | Exercise name | Materials |
-| --- | ------------- | --------- |
-| 1   | Introduction  | [](exNo1) |
+### Course materials
+                                                  | Instrukcja                       |
+| Nr  | Temat                                 |
+| --- | ------------------------------------------------------ | -------------------------------- | ------------------------------------------- |
+{{cw(1, "Nieustalona wymiana ciepła")}}
+{{cw(2, "Promieniowanie cieplne")}}
+{{cw(3, "Modelowanie przepływów wielofazowych")}}
+{{cw(4, "Modelowanie przemiany fazowej")}}
+{{cw(5, "Modelowanie przepływów zawierających cząstki stałe")}}
+{{cw(6, "Modelowanie przepływu przez stopień maszyny wirnikowej")}}
+{{cw(7, "Modelowanie opływu płata")}}
