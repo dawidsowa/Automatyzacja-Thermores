@@ -18,14 +18,13 @@ classes = {
     10: 'Przegroda wielowarstwowa',
     11: 'Mieszalnik z mieszadłem Rushtona',
     12: 'Przepływ dwufazowy'
-
 }
 -%}
 
 | Nr | Temat | Instrukcja |
 |-|----|-|
 {%- for nr, name in classes.items() %}
-| {{nr}} | {{name}} | {{plik("Lab" + nr + ".zip")}} |
+| {{nr}} | {{name}} | {{plik("Lab" + str(nr) + ".zip")}} |
 {% endfor -%}
 
 ### Inne materiały
