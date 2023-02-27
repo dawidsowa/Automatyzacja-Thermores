@@ -1,4 +1,6 @@
 {% set base = "/files/upload/157/public/dydaktyka" %}
+{% macro plik(name) -%}[{{name}}]({{base}}/{{name}}){%- endmacro -%}
+
 
 ### Ćwiczenia
 
@@ -23,7 +25,7 @@ classes = {
 | Nr | Temat | Instrukcja |
 |-|----|-|
 {%- for nr, name in files.items() %}
-#### [{{name}}]({{url}})
+| {{nr}} | {{name}} | [{{}}]() |
 {% endfor -%}
 
 ### Inne materiały
