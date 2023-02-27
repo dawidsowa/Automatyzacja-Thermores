@@ -3,7 +3,7 @@
     "defaultColor": "#ff0034",
     "commands": [
       {
-        "command": "cd ${fileDirname}; jinja2 ${file} -o ${fileBasenameNoExtension}; pandoc ${fileBasenameNoExtension} -o ${fileBasenameNoExtension}.html",
+        "command": "cd ${fileDirname}; jinja2 ${file} -o ${fileBasenameNoExtension}; pandoc ${fileBasenameNoExtension} -o ${fileBasename}.html",
         "name": "Jinja2",
         "singleInstance": true
         //   },
