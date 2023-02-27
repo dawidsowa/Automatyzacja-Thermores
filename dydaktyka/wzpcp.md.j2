@@ -1,4 +1,5 @@
-{% macro cw(nr,title) -%}| {{nr}} | {{title}} | [Ćw. {{nr}}](/files/upload/157/public/dydaktyka/wzpcp/cw{{nr}}.zip) | [![](/files/upload/157/public/dydaktyka/sptfp/img{{nr}}.gif){width=400px}](/files/upload/157/public/dydaktyka/sptfp/img{{nr}}.gif) |{%- endmacro %}
+{% set base = "/files/upload/157/public/dydaktyka/wzpcp" %}
+{% macro cw(nr,title) -%}| {{nr}} | {{title}} | [Ćw. {{nr}}](/cw{{nr}}.zip) | [![](/files/upload/157/public/dydaktyka/sptfp/img{{nr}}.gif){width=400px}](/files/upload/157/public/dydaktyka/sptfp/img{{nr}}.gif) |{%- endmacro %}
 
 ### Ćwiczenia
 
