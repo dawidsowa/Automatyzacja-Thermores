@@ -1,6 +1,7 @@
 {% set base = "/files/upload/157/public/dydaktyka" %}
 {% macro cw(nr,title) -%}| {{nr}} | {{title}} | [Ćw. {{nr}}](/cw{{nr}}.zip) | [![]({{base}}/sptfp/img{{nr}}.gif){width=400px}]({{base}}/sptfp/img{{nr}}.gif) |{%- endmacro %}
 
+
 ### Ćwiczenia
 
 | Nr | Temat | Instrukcja | |
@@ -19,7 +20,7 @@
 files = {
     'Zasady zaliczenia kursu': base + "/cfd/orgclasses.pdf",
     'Zalecenia edytorskie raportu': base + "/cfd/editorialreq.doc",
-    'Raport - instrukcja':  base + "/sptfp/reportinstruction.pdf",
+    'Report preparation instruction':  base + "/sptfp/reportinstruction.pdf",
     'Report template': base + '/sptfp/reporttemplate.doc',
     'Schedule of the classes': base + '/sptfp/schedule.pdf',
     'EASE Guidelines for Authors and Translators of Scientific Articles to be Published in English': 'https://www.ease.org.uk/wp-content/uploads/2018/11/doi.10.20316.ESE_.2018.44.e1.pdf'
