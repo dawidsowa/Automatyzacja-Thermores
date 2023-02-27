@@ -3,12 +3,16 @@
     "defaultColor": "#ff0034",
     "commands": [
       {
-        "color": "#af565c",
-        "command": "jinja2 ${file} -o ${dir}\\${fileBasenameNoExtension}",
+        "command": "jinja2 ${file} -o ${fileDirname}\\${fileBasenameNoExtension} && pandoc ${fileDirname}\\${fileBasenameNoExtension} -o ${fileDirname}\\${fileBasenameNoExtension}.html",
         "name": "Jinja2",
         "singleInstance": true
+        //   },
+        //   {
+        //     "command": "pandoc ${file} -o ${fileDirname}\\${fileBasenameNoExtension}.html",
+        //     "name": "HTML",
+        //     "singleInstance": true
       }
     ]
   },
-  "gitdoc.enabled": false
+  "gitdoc.enabled": true
 }

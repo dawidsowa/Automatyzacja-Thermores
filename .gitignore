@@ -1,5 +1,6 @@
 .~lock.*.xlsx#
 *.html
+*.md
 **/__pycache__
 **.new.side
 poetry.lock
