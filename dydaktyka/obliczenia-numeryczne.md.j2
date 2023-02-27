@@ -24,7 +24,7 @@ classes = {
 
 | Nr | Temat | Instrukcja |
 |-|----|-|
-{%- for nr, name in files.items() %}
+{%- for nr, name in classes.items() %}
 | {{nr}} | {{name}} | {{plik("Lab" + nr + ".zip")}} |
 {% endfor -%}
 
