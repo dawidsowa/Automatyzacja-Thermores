@@ -24,6 +24,9 @@ classes = {
 
 | Nr | Temat | Instrukcja |
 |-|----|-|
+{%- for name, url in files.items() %}
+#### [{{name}}]({{url}})
+{% endfor -%}
 
 ### Inne materiały
 
