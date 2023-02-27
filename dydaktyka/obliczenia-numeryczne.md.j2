@@ -1,6 +1,4 @@
 {% set base = "/files/upload/157/public/dydaktyka" %}
-{% macro cw(nr,title) -%}| {{nr}} | {{title}} | [Ćw. {{nr}}](/cw{{nr}}.zip) | [![]({{base}}/sptfp/img{{nr}}.gif){width=400px}]({{base}}/sptfp/img{{nr}}.gif) |{%- endmacro %}
-
 
 ### Ćwiczenia
 
@@ -24,7 +22,7 @@ classes = {
 
 | Nr | Temat | Instrukcja |
 |-|----|-|
-{%- for name, url in files.items() %}
+{%- for nr, name in files.items() %}
 #### [{{name}}]({{url}})
 {% endfor -%}
 
