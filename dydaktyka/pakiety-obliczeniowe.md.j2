@@ -1,10 +1,10 @@
 {% set base = "/files/upload/157/public/dydaktyka/pakiety-obliczeniowe" %}
-{% macro plik(name) -%}[{{name}}]({{base}}/{{name}}){%endmacro%}
+{% macro plik(name) -%}[{{name}}]({{base}}/{{name}}){%- endmacro %}
 
 
 ### Materiały do zajęć
 
 | Nazwa | Plik |
 |-------|------|
-| Skrypt | []({{base}}/) |
+| Skrypt | {{plik()}} |
 | Inne | [katapulta.p]({{base}})
