@@ -1,7 +1,7 @@
 {% set base = "/files/upload/157/public/dydaktyka" %}
 {%extends "szablon_pl.md.j2" %}
 {% block id%}102{% endblock %}
-{%set classes%}
+{%set classes | %}
 Wprowadzenie
 Grzanie/chłodzenie pręta
 Mieszalnik statyczny
@@ -16,10 +16,7 @@ Mieszalnik z mieszadłem Rushtona
 Przepływ dwufazowy
 {%endset%}
 {% set
-classes, files = [
-
-],
-{
+classes = {
     'Zalecenia edytorskie raportu': base + "/cfd/zalecenia_edytorskie.doc",
     'Raport - instrukcja':  base + "/cfd/raport_instrukcja.pdf",
     'Zasady oceny raportów': base + '/wzpcp/zasadyocenyraportow.pdf',
