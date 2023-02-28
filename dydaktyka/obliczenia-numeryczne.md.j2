@@ -32,7 +32,7 @@ files = {
 | Nr | Temat | Plik |
 |-|----|-|
 {%- for item in classes.split("\n") %}
-| {{loop.index}} | {{name}} | {{plik("lab" ~ loop.index ~ ".zip")}} |
+| {{loop.index}} | {{item}} | {{plik("lab" ~ loop.index ~ ".zip")}} |
 {%- endfor %}
 {%endblock%}
 
