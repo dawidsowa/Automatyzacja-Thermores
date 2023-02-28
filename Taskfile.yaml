@@ -5,7 +5,7 @@ version: "3"
 tasks:
   default:
     cmds:
-      - mkdir -p build/{{.CLI_ARGS | dir}}
+      # - mkdir -p build/{{.CLI_ARGS | dir}}
       - jinja2 {{.CLI_ARGS}} | pandoc -o  build/{{.CLI_ARGS | replace ".md.j2" ".html"}}
   all:
     cmds:
