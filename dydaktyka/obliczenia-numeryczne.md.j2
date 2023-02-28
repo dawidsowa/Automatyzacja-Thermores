@@ -1,7 +1,7 @@
 {% set base = "/files/upload/157/public/dydaktyka" %}
 {%extends "szablon_pl.md.j2" %}
 {% block id%}102{% endblock %}
-{%set classes | split("\n")%}
+{%set classes %}
 Wprowadzenie
 Grzanie/chłodzenie pręta
 Mieszalnik statyczny
@@ -31,7 +31,7 @@ files = {
 {% macro plik(name) -%}[{{name}}]({{base}}/obliczenia-numeryczne/{{name}}){%- endmacro -%}
 | Nr | Temat | Plik |
 |-|----|-|
-{%- for item in classes %}
+{%- for item in classes.split("\n") %}
 | {{loop.index}} | {{name}} | {{plik("lab" ~ loop.index ~ ".zip")}} |
 {%- endfor %}
 {%endblock%}
