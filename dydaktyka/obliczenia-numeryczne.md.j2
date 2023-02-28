@@ -2,20 +2,20 @@
 {%extends "szablon_pl.md.j2" %}
 {% block id%}102{% endblock %}
 {% set
-classes, files = {
-    1: 'Wprowadzenie',
-    2: 'Grzanie/chłodzenie pręta',
-    3: 'Mieszalnik statyczny',
-    4: 'Wymiennik krzyżowo-prądowy',
-    5: 'Przepływ w kanale zakrzywionym',
-    6: 'Schematy różnicowe',
-    7: 'Modele turbulencji',
-    8: 'Wymiennik płaszczowo-rurowy',
-    9: 'Dysza de Lavala',
-    10: 'Przegroda wielowarstwowa',
-    11: 'Mieszalnik z mieszadłem Rushtona',
-    12: 'Przepływ dwufazowy'
-},
+classes, files = [
+    'Wprowadzenie',
+    'Grzanie/chłodzenie pręta',
+    'Mieszalnik statyczny',
+    'Wymiennik krzyżowo-prądowy',
+    'Przepływ w kanale zakrzywionym',
+    'Schematy różnicowe',
+    'Modele turbulencji',
+    'Wymiennik płaszczowo-rurowy',
+    'Dysza de Lavala',
+     'Przegroda wielowarstwowa',
+     'Mieszalnik z mieszadłem Rushtona',
+     'Przepływ dwufazowy'
+],
 {
     'Zalecenia edytorskie raportu': base + "/cfd/zalecenia_edytorskie.doc",
     'Raport - instrukcja':  base + "/cfd/raport_instrukcja.pdf",
