@@ -31,8 +31,8 @@ classes, files = [
 {% macro plik(name) -%}[{{name}}]({{base}}/obliczenia-numeryczne/{{name}}){%- endmacro -%}
 | Nr | Temat | Plik |
 |-|----|-|
-{%- for nr, name in classes.items() %}
-| {{nr}} | {{name}} | {{plik("lab" ~ nr ~ ".zip")}} |
+{%- for item in classes %}
+| {{loop.index}} | {{name}} | {{plik("lab" ~ loop.index ~ ".zip")}} |
 {%- endfor %}
 {%endblock%}
 
