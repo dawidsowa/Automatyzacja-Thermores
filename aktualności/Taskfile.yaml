@@ -3,7 +3,4 @@ version: "3"
 tasks:
   default:
     cmds:
-      - task: pandoc:jinja2+html
-        vars: { NAME: wladze }
-      - task: pandoc:jinja2+html
-        vars: { NAME: laboratoria }
+      - pandoc esa.md -o esa.html
