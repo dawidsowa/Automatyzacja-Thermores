@@ -6,11 +6,11 @@
 
 import argparse
 
-def main():
+def ${TM_FILENAME_BASE}():
 
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(prog="CompareMusicMetadata")
+    parser = argparse.ArgumentParser(prog="${TM_FILENAME_BASE}")
     parser.add_argument("file", metavar="file", type=str, nargs=1, help="file name")
     args = parser.parse_args()
