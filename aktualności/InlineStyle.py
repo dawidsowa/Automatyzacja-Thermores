@@ -6,6 +6,10 @@ from subprocess import run
 import css_inline
 
 
+# Przykład:
+# ./InlineStyle.py dofinansowanie.md ../styles/style.css dofinansowanie.html -fmarkdown-implicit_figures
+
+
 def InlineStyle(
     input_file: Path, css_file: Path, output_file: Path | None, pandoc_args
 ):
