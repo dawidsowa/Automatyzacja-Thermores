@@ -5,8 +5,8 @@ from pathlib import Path
 import css_inline
 
 
-def InlineStyle(html_file: Path, css_file: Path, output_file: Path | None):
-    html = html_file.read_text()
+def InlineStyle(input_file: Path, css_file: Path, output_file: Path | None):
+    html = input_file.read_text()
     css = css_file.read_text()
     joined = f"<style>\n{css}\n</style>\n{html}"
 
@@ -20,7 +20,7 @@ def InlineStyle(html_file: Path, css_file: Path, output_file: Path | None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(prog="InlineStyle")
-    parser.add_argument("html_file", metavar="html_file", type=Path, help="file name")
+    parser.add_argument("input_file", metavar="input_file", type=Path, help="file name")
     parser.add_argument("css_file", metavar="css_file", type=Path, help="file name")
     parser.add_argument(
         "output_file",
@@ -32,4 +32,4 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    InlineStyle(args.html_file, args.css_file, args.output_file)
+    InlineStyle(args.input_file, args.css_file, args.output_file)
