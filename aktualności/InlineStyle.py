@@ -23,7 +23,15 @@ def InlineStyle(
     joined = f"<style>\n{css}\n</style>\n{html}"
 
     inliner = css_inline.CSSInliner(extra_css=css)
-    inlined = inliner.inline(joined)
+    inlined = (
+        inliner.inline(joined)
+        .replace(
+            """<html><head>
+</head><body>""",
+            "",
+        )
+        .replace("</body></html>", "")
+    )
 
     if output_file:
         output_file.write_text(inlined)
