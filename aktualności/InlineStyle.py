@@ -13,7 +13,7 @@ def InlineStyle(html_file: Path, css_file: Path, output_file: Path | None):
     inlined = css_inline.inline(joined)
 
     if output_file:
-        pass
+        output_file.write_text(inlined)
     else:
         print(inlined)
 
