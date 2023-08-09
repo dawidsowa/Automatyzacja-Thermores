@@ -3,4 +3,4 @@ version: "3"
 tasks:
   default:
     cmds:
-      - pandoc esa.md -o esa.html
+      - pandoc dofinansowanie.md -o dofinansowanie.html
