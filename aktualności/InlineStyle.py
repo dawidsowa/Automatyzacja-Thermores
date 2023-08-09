@@ -24,6 +24,7 @@ def InlineStyle(
 
     inliner = css_inline.CSSInliner(extra_css=css)
     inlined = inliner.inline(joined)
+    inlined = inliner.inline(inlined)
 
     if output_file:
         output_file.write_text(inlined)
