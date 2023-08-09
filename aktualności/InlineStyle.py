@@ -38,7 +38,9 @@ def InlineStyle(
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(prog="InlineStyle")
+    parser = argparse.ArgumentParser(
+        prog="InlineStyle", description="Dodaje CSS do pliku html lub markdown"
+    )
     parser.add_argument("input_file", metavar="input_file", type=Path, help="file name")
     parser.add_argument("css_file", metavar="css_file", type=Path, help="file name")
     parser.add_argument(
