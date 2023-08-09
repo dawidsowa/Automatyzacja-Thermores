@@ -5,12 +5,17 @@ from pathlib import Path
 import css_inline
 
 
-def InlineStyle(html_file: Path, css_file: Path, output_file: Path):
+def InlineStyle(html_file: Path, css_file: Path, output_file: Path | None):
     html = html_file.read_text()
     css = css_file.read_text()
     joined = f"<style>\n{css}\n</style>\n{html}"
 
     inlined = css_inline.inline(joined)
+
+    if output_file:
+        pass
+    else:
+        print(inlined)
 
 
 if __name__ == "__main__":
