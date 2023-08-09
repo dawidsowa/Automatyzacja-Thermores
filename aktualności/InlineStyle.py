@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 
 import argparse
+from pathlib import Path
 
 
 def InlineStyle(html_file, css_file):
-    print(html_file)
+    print(html_file.name)
 
 
 if __name__ == "__main__":
