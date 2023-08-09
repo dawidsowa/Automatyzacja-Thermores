@@ -9,7 +9,7 @@ def InlineStyle(html_file, css_file):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(prog="InlineStyle")
-    parser.add_argument("html_file", metavar="html_file", type=str, help="file name")
+    parser.add_argument("html_file", metavar="html_file", type=Path, help="file name")
     parser.add_argument("css_file", metavar="css_file", type=str, help="file name")
     args = parser.parse_args()
 
