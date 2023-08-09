@@ -2,11 +2,15 @@
 
 import argparse
 from pathlib import Path
+from subprocess import run
 import css_inline
 
 
 def InlineStyle(input_file: Path, css_file: Path, output_file: Path | None):
-    html = input_file.read_text()
+    if input_file.suffix = ".md":
+        html = run([], capture_output=True, text=True).stdout
+    else:
+        html = input_file.read_text()
     css = css_file.read_text()
     joined = f"<style>\n{css}\n</style>\n{html}"
 
