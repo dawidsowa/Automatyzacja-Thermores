@@ -4,8 +4,8 @@ import argparse
 from pathlib import Path
 
 
-def InlineStyle(html_file, css_file):
-    print(html_file)
+def InlineStyle(Path: html_file, Path: css_file):
+    print(html_file.read_tet)
 
 
 if __name__ == "__main__":
