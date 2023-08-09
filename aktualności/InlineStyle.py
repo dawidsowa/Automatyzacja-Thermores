@@ -10,7 +10,7 @@ def InlineStyle(html_file: Path, css_file: Path):
     css = css_file.read_text()
     joined = f"<style>\n{css}\n</style>\n{html}"
 
-    inliner = css_inline.CSSInliner(keep_style_tags=True)
+    inlined = css_inline.inline(joined)
     print(joined)
 
 
