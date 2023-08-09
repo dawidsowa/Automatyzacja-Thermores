@@ -5,7 +5,7 @@ from pathlib import Path
 import css_inline
 
 
-def InlineStyle(html_file: Path, css_file: Path):
+def InlineStyle(html_file: Path, css_file: Path, output_file: Path):
     html = html_file.read_text()
     css = css_file.read_text()
     joined = f"<style>\n{css}\n</style>\n{html}"
