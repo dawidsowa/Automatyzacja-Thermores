@@ -51,7 +51,11 @@ if __name__ == "__main__":
         type=Path,
         help="file name",
     )
-    parser.add_argument("pandoc_args", nargs=argparse.REMAINDER)
+    parser.add_argument(
+        "pandoc_args",
+        nargs=argparse.REMAINDER,
+        help="Wszystkie inne argumenty zostaną przekazane do pandoc",
+    )
     args = parser.parse_args()
 
     InlineStyle(args.input_file, args.css_file, args.output_file, args.pandoc_args)
