@@ -4,6 +4,9 @@
 # from subprocess import run
 # from sys import argv
 
+import argparse
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(prog="CompareMusicMetadata")
     parser.add_argument("file", metavar="file", type=str, nargs=1, help="file name")
