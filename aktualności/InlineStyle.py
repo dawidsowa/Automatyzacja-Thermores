@@ -5,7 +5,8 @@ from pathlib import Path
 
 
 def InlineStyle(html_file: Path, css_file: Path):
-    print(html_file.read_text())
+    html = html_file.read_text()
+    css = css_file.read_text()
 
 
 if __name__ == "__main__":
