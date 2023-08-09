@@ -7,6 +7,8 @@ from pathlib import Path
 def InlineStyle(html_file: Path, css_file: Path):
     html = html_file.read_text()
     css = css_file.read_text()
+    joined = f"<style>\n{css}\n</style>\n{html}"
+    print(joined)
 
 
 if __name__ == "__main__":
