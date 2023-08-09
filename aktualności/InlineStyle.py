@@ -8,7 +8,7 @@ import css_inline
 
 def InlineStyle(input_file: Path, css_file: Path, output_file: Path | None):
     if input_file.suffix = ".md":
-        html = run([], capture_output=True, text=True).stdout
+        html = run(["pandoc", input_file], capture_output=True, text=True).stdout
     else:
         html = input_file.read_text()
     css = css_file.read_text()
