@@ -4,7 +4,7 @@ import argparse
 from pathlib import Path
 
 
-def InlineStyle(Path: html_file, Path: css_file):
+def InlineStyle(html_file: Path, css_file: Path):
     print(html_file.read_tet)
 
 
