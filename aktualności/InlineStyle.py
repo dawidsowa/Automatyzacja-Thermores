@@ -23,15 +23,13 @@ def InlineStyle(
     joined = f"<style>\n{css}\n</style>\n{html}"
 
     inliner = css_inline.CSSInliner(extra_css=css)
-    inlined = (
-        inliner.inline(joined)
-        .replace(
+    inlined = inliner.inline(joined)
+    if not "--standalone" in pandoc_args:
+        inlined = inlined.replace(
             """<html><head>
 </head><body>""",
             "",
-        )
-        .replace("</body></html>", "")
-    )
+        ).replace("</body></html>", "")
 
     if output_file:
         output_file.write_text(inlined)
