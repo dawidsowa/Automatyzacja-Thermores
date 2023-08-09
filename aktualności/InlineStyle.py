@@ -11,7 +11,6 @@ def InlineStyle(html_file: Path, css_file: Path):
     joined = f"<style>\n{css}\n</style>\n{html}"
 
     inlined = css_inline.inline(joined)
-    print(joined)
 
 
 if __name__ == "__main__":
@@ -19,7 +18,7 @@ if __name__ == "__main__":
     parser.add_argument("html_file", metavar="html_file", type=Path, help="file name")
     parser.add_argument("css_file", metavar="css_file", type=Path, help="file name")
     parser.add_argument(
-        "output",
+        "output_file",
         metavar="output_file",
         nargs="?",
         default=None,
@@ -28,4 +27,4 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    InlineStyle(args.html_file, args.css_file)
+    InlineStyle(args.html_file, args.css_file, args.output_file)
