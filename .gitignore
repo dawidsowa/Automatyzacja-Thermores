@@ -5,3 +5,6 @@
 **.new.side
 poetry.lock
 .venv/**
+**/.clj-kondo
+**/.cpcache
+**/.lsp

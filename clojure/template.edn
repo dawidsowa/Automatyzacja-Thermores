@@ -1,0 +1,31 @@
+[:div
+ {:class "accordion text-content active"}
+ [:button {:class "accordion-title"} "mgr inż. Marcin Opalski"]
+ [:div
+  {:class "accordion-text", :style "display: block;"}
+  [:figure
+   {:class "profile-picture", :style "float: right;"}
+   [:img
+    {:src
+     "https://thermores.pwr.edu.pl/fcp/xGBUKOQtTKlQhbx08SlkTUgFFUWRuHQwFDBoIVURNFDgPW1ZpCFghUHcKVigEQR1BXQEsKTwdAQsKJBVYCRlYdxdFDy4Z/157/public/foto/marcin_opalski.jpg"}]]
+  [:dl
+   {:id "marcin.opalski", :class "pracownik"}
+   [:dt "Temat pracy doktorskiej"]
+   [:dd "Modelowanie Numeryczne Pulsacyjnych Rurek Ciepła"]
+   [:dt "Promotor"]
+   [:dd "dr hab. inż. Sławomir Pietrowicz, prof. uczelni"]
+   [:dt "Obszar badań"]
+   [:dd
+    "Zajmuje się modelowaniem numerycznym dynamiki płynów. Swoje badania koncentruje na przepływach wielofazowych ze zmianą fazy. Obecne prace koncentruje na modelowaniu przepływu wewnątrz pulsujących rurek cieplnych i programowaniu modeli numerycznych w OpenFOAM, które najlepiej odzwierciedlają struktury przepływu wewnątrz pulsacyjnej rurki ciepła."]
+   [:dt "Słowa kluczowe"]
+   [:dd
+    "CFD, OpenFOAM, Fluent, CFX, Pulsacyjne rurki ciepła, Przepływy wielofazowe, Symulacje FSI, Programowanie w językach C++, Python"]
+   [:dt "Biuro"]
+   [:dd "bud. D-2 pok. 13"]
+   [:dt "Telefon"]
+   [:dd [:a {:href "tel:+48 (71) 320 30 91"} "+48 (71) 320 30 91"]]
+   [:dt "E-mail"]
+   [:dd
+    [:a
+     {:href "mailto:marcin.opalski@pwr.edu.pl"}
+     "marcin.opalski@pwr.edu.pl"]]]]]

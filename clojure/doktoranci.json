@@ -1,0 +1,178 @@
+[
+  {
+    "name": "mgr inż. Sindu Daniarta",
+    "temat_pracy_doktorskiej": "(related to organic Rankine cycle (ORC) and volumetric expansion - in preparation)",
+    "promotor": "1. dr hab. inż. Piotr Kolasiński, prof. uczelni,\n2. Prof. Attila R. Imre, Ph.D., D.Sc (the Department of Energy Engineering at Budapest University of Technology and Economics, Hungary)",
+    "text": "He is conducting research on the organic Rankine cycle (ORC) and volumetric expansions that the scope of the research covers theoretical and experimental aspects (which include numerical analysis, modelling and simulation, and building an experimental setup). His research can utilize any heat sources such as ocean thermal, industrial waste heat, geothermal, combustion from biomass/waste, cold energy, etc. Furthermore, his interest also includes an integrated thermal energy system, waste-to-energy, clean and sustainable energy.",
+    "keywords": [
+      "ORC systems",
+      "volumetric expansion",
+      "working fluid",
+      "phase equilibria",
+      "thermodynamic",
+      "thermal power systems",
+      "integrated thermal energy system",
+      "clean and sustainable energy",
+      "waste-to-energy"
+    ],
+    "biuro": "bud. D-2 pok. 13 (11E)",
+    "tel": "(71) 320 30 91",
+    "id": "sindu.daniarta",
+    "photo": "public/foto/sindu_daniarta.jpg",
+    "content": ""
+  },
+  {
+    "name": "mgr inż. Daria Krasota",
+    "temat_pracy_doktorskiej": "PREDICTIVE MODEL AND NUMERICAL MODELING OF FROST FORMATION IN AN EVAPORATOR OF A DOMESTIC REFRIGERATOR",
+    "promotor": "Supervisor I DSc, PhD, Eng Piotr Kolasiński \nSupervisor II DSc, PhD, Eng Przemysław Błasiak",
+    "text": "The research aims to fill the knowledge gap on the frost formation phenomena occurring on the fin surface of the evaporator inside a domestic refrigerator. It consists of the following parts: \n- literature review of the topic, recognizing the current state and identifying a potential direction for further studies;\n- numerical modeling of the process of evaporator clogging;\n- mathematical calculations of the model using CFD tools, predicting the frost growth pace and profile;\n- experimental validation of the model and conclusions.\nThe model can further be used for frost formation risk reduction on different \nsolid surfaces which are in contact with high humidity. This may be implemented as a cost-reduction action for numerous projects in different fields \nof engineering.",
+    "keywords": [
+      "Frost formation",
+      "evaporator",
+      "heat exchange",
+      "CFD",
+      "numerical modeling",
+      "Domestic refrigerator"
+    ],
+    "biuro": "bud. D-2 pok. 13 (11E)",
+    "tel": "(71) 320 30 91",
+    "id": "daria.krasota",
+    "photo": "public/foto/daria_krasota.jpg",
+    "content": ""
+  },
+  {
+    "name": "mgr inż. Marcin Opalski",
+    "temat_pracy_doktorskiej": "Modelowanie Numeryczne Pulsacyjnych Rurek Ciepła",
+    "promotor": "dr hab. inż. Sławomir Pietrowicz, prof. uczelni",
+    "text": "Zajmuje się modelowaniem numerycznym dynamiki płynów. Swoje badania koncentruje na przepływach wielofazowych ze zmianą fazy. Obecne prace koncentruje na modelowaniu przepływu wewnątrz pulsujących rurek cieplnych i programowaniu modeli numerycznych w OpenFOAM, które najlepiej odzwierciedlają struktury przepływu wewnątrz pulsacyjnej rurki ciepła.",
+    "keywords": [
+      "CFD",
+      "OpenFOAM",
+      "Fluent",
+      "CFX",
+      "Pulsacyjne rurki ciepła",
+      "Przepływy wielofazowe",
+      "Symulacje FSI",
+      "Programowanie w językach C++",
+      "Python"
+    ],
+    "biuro": "bud. D-2 pok. 13 (11E)",
+    "tel": "(71) 320 30 91",
+    "id": "marcin.opalski",
+    "photo": "public/foto/marcin_opalski.jpg",
+    "content": ""
+  },
+  {
+    "name": "mgr inż. Jacek Bieńkowski",
+    "temat_pracy_doktorskiej": "",
+    "promotor": "",
+    "text": "",
+    "keywords": [
+      ""
+    ],
+    "biuro": "",
+    "tel": "",
+    "id": "",
+    "photo": "",
+    "content": "<p>W budowie</p>"
+  },
+  {
+    "name": "mgr inż. Dominik Mazur",
+    "temat_pracy_doktorskiej": "",
+    "promotor": "",
+    "text": "",
+    "keywords": [
+      ""
+    ],
+    "biuro": "bud. D-2 pok. 13 (11E)",
+    "tel": "(71) 340 79 55",
+    "id": "dominik.mazur",
+    "photo": "public/foto/dominik_mazur.jpg",
+    "content": "<p>W budowie</p>"
+  },
+  {
+    "name": "mgr inż. Kamil Kowalski",
+    "temat_pracy_doktorskiej": "",
+    "promotor": "",
+    "text": "",
+    "keywords": [
+      ""
+    ],
+    "biuro": "",
+    "tel": "",
+    "id": "",
+    "photo": "",
+    "content": "<p>W budowie</p>"
+  },
+  {
+    "name": "mgr inż. Dawid Sowa",
+    "temat_pracy_doktorskiej": "W opracowaniu - związany z Organicznym Obiegiem Rankine'a",
+    "promotor": "prof. dr hab. inż. Piotr Kolasiński",
+    "text": "",
+    "keywords": [
+      "układy ORC",
+      "obiegi termodynamiczne",
+      "Python"
+    ],
+    "biuro": "bud. D-2 pok. 13 (11E)",
+    "tel": "(71) 320 30 91",
+    "id": "dawid.sowa",
+    "photo": "",
+    "content": ""
+  },
+  {
+    "name": "mgr inż. Marta Stempniak",
+    "temat_pracy_doktorskiej": "W opracowaniu - związany z pomiarami czynnika roboczego w Pulsacyjnej Rurce Ciepła wykorzystując czujniki światłowodowe",
+    "promotor": "dr hab. inż. Sławomir Pietrowicz, prof. uczelni",
+    "text": "",
+    "keywords": [
+      "Pulsacyjne rurki ciepła",
+      "termodynamika",
+      "czujniki światłowodowe",
+      "DFOS",
+      "podczerwień"
+    ],
+    "biuro": "bud. D-2 pok. 13 (11E)",
+    "tel": "(71) 320 30 91",
+    "id": "marta.stempniak",
+    "photo": "",
+    "content": ""
+  },
+  {
+    "name": "mgr inż. Tomasz Duraziński",
+    "temat_pracy_doktorskiej": "[W opracowaniu] - Tematyka powiązana z numerycznym modelowaniem przepływów dwufaozwych w pulsacyjnych rurkach ciepła (PHP) w warunkach mikrograwitacji.",
+    "promotor": "dr hab. inż. Sławomir Pietrowicz, prof. uczelni",
+    "text": "",
+    "keywords": [
+      "Numeryczna mechanika płynów",
+      "Ansys CFX",
+      "Ansys Fluent",
+      "OpenFOAM",
+      "przepływy dwufazowe",
+      "wymiana ciepła"
+    ],
+    "biuro": "bud. D-2 pok. 13 (11E)",
+    "tel": "(71) 320 30 91",
+    "id": "tomasz.durazinski",
+    "photo": "",
+    "content": ""
+  },
+  {
+    "name": "mgr inż. Szymon Lech ",
+    "temat_pracy_doktorskiej": "W opracowaniu - związany z badaniem procesów termodynamicznych i wymiany ciepła w układzie odzysku energii odpadowej - „Analiza generowania ciepła tarcia w maszynie wielołopatkowej przeznaczonej do odzysku energii odpadowej”",
+    "promotor": "Promotor: prof. dr hab. inż. Piotr Kolasiński\nPromotor pomocniczy: dr inż. Cezary Czajkowski",
+    "text": "",
+    "keywords": [
+      "energia odpadowa",
+      "obiegi termodynamiczne",
+      "ciepło tarcia",
+      "maszyny objętościowe",
+      "proces regazyfikacji"
+    ],
+    "biuro": "bud. D-2 pok. 13 (11E)",
+    "tel": "(71) 320 30 91",
+    "id": "szymon.lech",
+    "photo": "",
+    "content": ""
+  }
+]
