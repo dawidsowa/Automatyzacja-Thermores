@@ -18,8 +18,7 @@
     "biuro": "bud. D-2 pok. 13 (11E)",
     "tel": "(71) 320 30 91",
     "id": "sindu.daniarta",
-    "photo": "public/foto/sindu_daniarta.jpg",
-    "content": ""
+    "photo": "public/foto/sindu_daniarta.jpg"
   },
   {
     "name": "mgr inż. Daria Krasota",
@@ -37,8 +36,7 @@
     "biuro": "bud. D-2 pok. 13 (11E)",
     "tel": "(71) 320 30 91",
     "id": "daria.krasota",
-    "photo": "public/foto/daria_krasota.jpg",
-    "content": ""
+    "photo": "public/foto/daria_krasota.jpg"
   },
   {
     "name": "mgr inż. Marcin Opalski",
@@ -59,56 +57,46 @@
     "biuro": "bud. D-2 pok. 13 (11E)",
     "tel": "(71) 320 30 91",
     "id": "marcin.opalski",
-    "photo": "public/foto/marcin_opalski.jpg",
-    "content": ""
+    "photo": "public/foto/marcin_opalski.jpg"
   },
   {
     "name": "mgr inż. Jacek Bieńkowski",
-    "temat_pracy_doktorskiej": "",
-    "promotor": "",
-    "text": "",
-    "keywords": [
-      ""
-    ],
-    "biuro": "",
-    "tel": "",
-    "id": "",
-    "photo": "",
-    "content": "<p>W budowie</p>"
+    "temat_pracy_doktorskiej": null,
+    "promotor": null,
+    "text": null,
+    "keywords": null,
+    "biuro": null,
+    "tel": null,
+    "id": null,
+    "photo": null
   },
   {
     "name": "mgr inż. Dominik Mazur",
-    "temat_pracy_doktorskiej": "",
-    "promotor": "",
-    "text": "",
-    "keywords": [
-      ""
-    ],
+    "temat_pracy_doktorskiej": null,
+    "promotor": null,
+    "text": null,
+    "keywords": null,
     "biuro": "bud. D-2 pok. 13 (11E)",
     "tel": "(71) 340 79 55",
     "id": "dominik.mazur",
-    "photo": "public/foto/dominik_mazur.jpg",
-    "content": "<p>W budowie</p>"
+    "photo": "public/foto/dominik_mazur.jpg"
   },
   {
     "name": "mgr inż. Kamil Kowalski",
-    "temat_pracy_doktorskiej": "",
-    "promotor": "",
-    "text": "",
-    "keywords": [
-      ""
-    ],
-    "biuro": "",
-    "tel": "",
-    "id": "",
-    "photo": "",
-    "content": "<p>W budowie</p>"
+    "temat_pracy_doktorskiej": null,
+    "promotor": null,
+    "text": null,
+    "keywords": null,
+    "biuro": null,
+    "tel": null,
+    "id": null,
+    "photo": null
   },
   {
     "name": "mgr inż. Dawid Sowa",
-    "temat_pracy_doktorskiej": "W opracowaniu - związany z Organicznym Obiegiem Rankine'a",
+    "temat_pracy_doktorskiej": "Badanie współpracy układów Organic Rankine Cycle z akumulatorami ciepła",
     "promotor": "prof. dr hab. inż. Piotr Kolasiński",
-    "text": "",
+    "text": null,
     "keywords": [
       "układy ORC",
       "obiegi termodynamiczne",
@@ -117,14 +105,13 @@
     "biuro": "bud. D-2 pok. 13 (11E)",
     "tel": "(71) 320 30 91",
     "id": "dawid.sowa",
-    "photo": "",
-    "content": ""
+    "photo": "public/foto/dawid_sowa.jpg"
   },
   {
     "name": "mgr inż. Marta Stempniak",
     "temat_pracy_doktorskiej": "W opracowaniu - związany z pomiarami czynnika roboczego w Pulsacyjnej Rurce Ciepła wykorzystując czujniki światłowodowe",
     "promotor": "dr hab. inż. Sławomir Pietrowicz, prof. uczelni",
-    "text": "",
+    "text": null,
     "keywords": [
       "Pulsacyjne rurki ciepła",
       "termodynamika",
@@ -135,14 +122,13 @@
     "biuro": "bud. D-2 pok. 13 (11E)",
     "tel": "(71) 320 30 91",
     "id": "marta.stempniak",
-    "photo": "",
-    "content": ""
+    "photo": null
   },
   {
     "name": "mgr inż. Tomasz Duraziński",
     "temat_pracy_doktorskiej": "[W opracowaniu] - Tematyka powiązana z numerycznym modelowaniem przepływów dwufaozwych w pulsacyjnych rurkach ciepła (PHP) w warunkach mikrograwitacji.",
     "promotor": "dr hab. inż. Sławomir Pietrowicz, prof. uczelni",
-    "text": "",
+    "text": null,
     "keywords": [
       "Numeryczna mechanika płynów",
       "Ansys CFX",
@@ -154,14 +140,13 @@
     "biuro": "bud. D-2 pok. 13 (11E)",
     "tel": "(71) 320 30 91",
     "id": "tomasz.durazinski",
-    "photo": "",
-    "content": ""
+    "photo": null
   },
   {
     "name": "mgr inż. Szymon Lech ",
     "temat_pracy_doktorskiej": "W opracowaniu - związany z badaniem procesów termodynamicznych i wymiany ciepła w układzie odzysku energii odpadowej - „Analiza generowania ciepła tarcia w maszynie wielołopatkowej przeznaczonej do odzysku energii odpadowej”",
     "promotor": "Promotor: prof. dr hab. inż. Piotr Kolasiński\nPromotor pomocniczy: dr inż. Cezary Czajkowski",
-    "text": "",
+    "text": null,
     "keywords": [
       "energia odpadowa",
       "obiegi termodynamiczne",
@@ -172,7 +157,25 @@
     "biuro": "bud. D-2 pok. 13 (11E)",
     "tel": "(71) 320 30 91",
     "id": "szymon.lech",
-    "photo": "",
-    "content": ""
+    "photo": null
+  },
+  {
+    "name": "mgr inż. Jakub Polański",
+    "temat_pracy_doktorskiej": "Badania wpływu BIPV na komfort cieplny w budynku",
+    "promotor": "dr hab. inż. Magdalena Nemś, prof. Uczelni",
+    "text": null,
+    "keywords": [
+      "energia odnawialna",
+      "fotowoltaika",
+      "komfort cieplny w budynkach",
+      "instalacje BIPV",
+      "Building Integrated Photovoltaics",
+      "instalacje fotowoltaiczne zintegrowane ze strukturą budynku",
+      "fasady fotowoltaiczne"
+    ],
+    "biuro": "bud. L-1 pok. 313",
+    "tel": null,
+    "id": "jakub.polanski",
+    "photo": null
   }
 ]
